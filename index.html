@@ -7,8 +7,6 @@
   </head>
 
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Thank you for taking time to fill this form.</p>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!--
     Hello Camper!
@@ -20,13 +18,43 @@
     -->
     <script  src="js/index.js"></script>
     <p>Hello World, we are software developers!</p>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking time to fill this form.</p>
     <form action="#" id="survey-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" placeholder="
-    Enter your email address" required ><br><br>
-
+    <label id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+    <label id="email-label">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email address" required><br><br>
+    <label id="number-label">Number</label>
+    <input type="number" name="number" id="number" placeholder="Enter your number" required min="8" max="8"><br><br>
+    <label id="dropdown-label">Choose your role:</label>
+    <select id="role" name="role">
+    <option value="frontend">Frontend Developer</option>
+    <option value="backend">Backend Developer</option>
+    <option value="fullstack">Full-stack Developer</option>
+    </select>
+    <p>Please select your favorite text editor</p>
+    <input type="radio" id="emac" name="fav_editor" value="emac">
+    <label for="html">Emac</label><br>
+    <input type="radio" id="vi" name="fav_editor" value="vi">
+    <label for="css">Vi</label><br>
+    <input type="radio" id="visual_studio" name="fav_editor" value="visual_studio">
+    <label for="javascript">Visual Studio</label>
+    
+    <p>Which language are you proficient in:</p>
+    <input type="checkbox" id="html" name="html" value="html">
+    <label for="html">HTML/label><br>
+    <input type="checkbox" id="css" name="css" value="css">
+    <label for="css">CSS/label><br>
+    <input type="checkbox" id="javascript" name="javascript" value="javascript">
+    <label for="javascript">Javascript I have a boat</label><br><br>
+    
+    <label for="comments">Any comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50">
+  
+    </textarea>
+    <br><br>
+    <input type="submit" value="Submit">
     </form>
 </body>
 </html>
